@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Connor Hall">
+        <meta name="description" content="book app">
+        <meta name="keywords" content="web development, html, css, winnipeg, Canada">
+        <title>Shelf Swap</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/css/home.css">
+        <script src="./assets/js/app.js" defer></script>
+    </head>
+    <body class="grid-center">
+
+        <div class="container">
+
+            <header class="justify-between flex">
+                <p class="clock">00:00</p>
+                <div class="flex">
+                    <i class="fa-solid fa-volume-high"></i>
+                    <i class="fa-solid fa-wifi"></i>
+                    <i class="fa-solid fa-signal"></i>
+                    <p class="batt-level"></p>
+                    <i class="fa-solid fa-battery-full"></i>
+                </div>
+            </header>
+
+            <main>
+                <section class="home hide">
+                    <div class="align flex justify-between">
+                        <h1>Home</h1>
+                        <div class="profile-icon">
+                            <p>CH</p>
+                        </div>
+                    </div>
+                    
+                    <input type="text" placeholder="Search...">
+                    
+                    <label>Recomended for you</label>
+                    <ul class="flex">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li class="view-all">
+                            <p>View all</p>
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                    </ul>
+    
+                    <label>Posted by friends</label>
+                    <ul class="flex">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li class="view-all">
+                            <p>View all</p>
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                    </ul>
+    
+                    <h2>Genres you like</h2>
+                    
+                    <label>Fantasy</label>
+                    <ul class="flex">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li class="view-all">
+                            <p>View all</p>
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                    </ul>
+
+                    <label>Mystery</label>
+                    <ul class="flex">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li class="view-all">
+                            <p>View all</p>
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="search hide">
+
+                </section>
+                
+                <section class="swaps">
+                    <h1>Swaps</h1>
+                    <h2>Watching</h2>
+                    <ul>
+                        <li>
+                            <div class="flex">
+                                <div class="pic"></div>
+                                <div class="info">
+                                    <p>$27.99</p>
+                                    <p>condition: new</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex">
+                                <div class="pic"></div>
+                                <div class="info">
+                                    <p>Trade</p>
+                                    <p>condition: used</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex">
+                                <div class="pic"></div>
+                                <div class="info">
+                                    <p>$3.50</p>
+                                    <p>condition: fucked</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <h2>My Listings</h2>
+                    <ul>
+                        <li>
+                            <div class="flex">
+                                <div class="pic"></div>
+                                <div class="info">
+                                    <p>$27.99</p>
+                                    <p>condition: new</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex">
+                                <div class="pic"></div>
+                                <div class="info">
+                                    <p>Trade</p>
+                                    <p>condition: used</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex">
+                                <div class="pic"></div>
+                                <div class="info">
+                                    <p>$3.50</p>
+                                    <p>condition: fucked</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="listing">
+
+                </section>
+                    <div class="listing=img"></div>
+
+                    <h1 class="listing-title"></h1>
+                    <h2 class="listing-price"></h2>
+                    
+                    <div class="profile-icon"></div>
+                    
+                    <button>Contact seller</button>
+                </section>
+                
+                <section class="settings hide">
+                    <h1>Settings</h1>
+                    <ul>
+                        <li>Account</li>
+                        <li>Appearance</li>
+                        <li>Notifications</li>
+                        <li>Location</li>
+                        <li>Accessibility</li>
+                        <li>Support</li>
+                        <li>Log out</li>
+                    </ul>
+                </section>
+                
+                <section class="profile hide">
+
+                </section>
+            </main>
+            <footer>
+                <nav class="justify-between flex">
+                    <a>
+                        <i class="fa-solid fa-house"></i>
+                        Home
+                    </a>
+                    <a>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Search
+                    </a>
+                    <a>
+                        <div class="profile-nav">
+                            CH
+                        </div>
+                    </a>
+                    <a>
+                        <i class="fa-solid fa-right-left"></i>
+                        Swaps
+                    </a>
+                    <a>
+                        <i class="fa-solid fa-gear"></i>
+                        Settings
+                    </a>
+                </nav>
+            </footer>
+        </div>
+    </body>
+</html>
