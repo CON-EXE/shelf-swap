@@ -12,7 +12,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css">
         <link rel="stylesheet" href="./assets/css/main.css">
-        <link rel="stylesheet" href="./assets/css/home.css">
         <script src="./assets/js/app.js" defer></script>
     </head>
     <body class="grid-center">
@@ -31,7 +30,7 @@
             </header>
 
             <main>
-                <section class="home hide">
+                <section id="1" class="home active">
                     <div class="align flex justify-between">
                         <h1>Home</h1>
                         <div class="profile-icon">
@@ -41,62 +40,58 @@
                     
                     <input type="text" placeholder="Search...">
                     
-                    <label>Recomended for you</label>
-                    <ul class="flex">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li class="view-all">
-                            <p>View all</p>
-                            <i class="fa-solid fa-plus"></i>
-                        </li>
-                    </ul>
+                    <h2>Recomended for you</h2>
+                    <div class="recomended row">
+                        <div class="col-1 column"></div>
+                        <div class="col-2 column"></div>
+                        <div class="col-3 column"></div>
+                        <div class="col-4 column"></div>
+                    </div>
+                    <div class="button-container grid-center">
+                        <button class="view-all">View All</button>
+                    </div>
     
-                    <label>Posted by friends</label>
-                    <ul class="flex">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li class="view-all">
-                            <p>View all</p>
-                            <i class="fa-solid fa-plus"></i>
-                        </li>
-                    </ul>
+                    <h2>Posted by friends</h2>
+                    <div class="recomended row">
+                        <div class="col-1 column"></div>
+                        <div class="col-2 column"></div>
+                        <div class="col-3 column"></div>
+                        <div class="col-4 column"></div>
+                    </div>
+                    <div class="button-container grid-center">
+                        <button class="view-all">View All</button>
+                    </div>
     
                     <h2>Genres you like</h2>
                     
-                    <label>Fantasy</label>
-                    <ul class="flex">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li class="view-all">
-                            <p>View all</p>
-                            <i class="fa-solid fa-plus"></i>
-                        </li>
-                    </ul>
+                    <h2>Fantasy</h2>
+                    <div class="recomended row">
+                        <div class="col-1 column"></div>
+                        <div class="col-2 column"></div>
+                        <div class="col-3 column"></div>
+                        <div class="col-4 column"></div>
+                    </div>
+                    <div class="button-container grid-center">
+                        <button class="view-all">View All</button>
+                    </div>
 
-                    <label>Mystery</label>
-                    <ul class="flex">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li class="view-all">
-                            <p>View all</p>
-                            <i class="fa-solid fa-plus"></i>
-                        </li>
-                    </ul>
+                    <h2>Mystery</h2>
+                    <div class="recomended row">
+                        <div class="col-1 column"></div>
+                        <div class="col-2 column"></div>
+                        <div class="col-3 column"></div>
+                        <div class="col-4 column"></div>
+                    </div>
+                    <div class="button-container grid-center">
+                        <button class="view-all">View All</button>
+                    </div>
                 </section>
 
-                <section class="search hide">
-
+                <section id="2" class="search">
+                    <h1>This works</h1>
                 </section>
                 
-                <section class="swaps">
+                <section id="4" class="swaps hide">
                     <h1>Swaps</h1>
                     <h2>Watching</h2>
                     <ul>
@@ -161,9 +156,7 @@
                     </ul>
                 </section>
 
-                <section class="listing">
-
-                </section>
+                <section class="listing hide">
                     <div class="listing=img"></div>
 
                     <h1 class="listing-title"></h1>
@@ -193,24 +186,24 @@
             </main>
             <footer>
                 <nav class="justify-between flex">
-                    <a>
+                    <a id="1">
                         <i class="fa-solid fa-house"></i>
                         Home
                     </a>
-                    <a>
+                    <a id="2">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         Search
                     </a>
-                    <a>
+                    <a id="3">
                         <div class="profile-nav">
                             CH
                         </div>
                     </a>
-                    <a>
+                    <a id="4">
                         <i class="fa-solid fa-right-left"></i>
                         Swaps
                     </a>
-                    <a>
+                    <a id="5">
                         <i class="fa-solid fa-gear"></i>
                         Settings
                     </a>

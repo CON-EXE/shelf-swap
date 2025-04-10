@@ -20,8 +20,9 @@
     align-items: center;
 }
 
-.hide {
-    display: none;
+.grid-center {
+    display: grid;
+    place-content: center;
 }
 
 body {
@@ -40,6 +41,14 @@ main {
 
 main::-webkit-scrollbar {
     display: none;
+}
+
+section {
+    display: none
+}
+
+section.active {
+    display: block;
 }
 
 header {
@@ -116,6 +125,7 @@ h2 {
 }
 
 .home {
+    margin-bottom: 10px;
 
     .profile-icon {
         height: 35px;
@@ -141,41 +151,43 @@ h2 {
         border-radius: 25px;
         padding-inline: 10px;
     }
-    
-    ul {
-        overflow: hidden;
-        overflow-x: auto;
-        margin-bottom: 10px;
+
+    h2 {
+        font-size: 18px;
+        margin-top: 20px;
+        font-weight: 500;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
     }
     
-    li {
-        height: 120px;
-        width: 100px;
+    .column {
+        height: 150px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 4px rgb(0 0 0 / 8%);
+        flex: 0 0 calc(50% - 4px);
+        max-width: calc(50% - 4px);
+    }
+
+    div.column {
         background-color: blue;
-        margin-left: 5px;
-        flex-shrink: 0;
-        border-radius: 6px;
-    
-        :hover {
-            cursor: pointer;
-        }
     }
     
-    .view-all {
+    .button-container {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    button.view-all {
+        width: 250px;
         text-align: center;
-        place-content: center;
-        color: #008080;
-        background-color: #F8F8FF;
-        border: 1px solid #008080;
-    
-        p {
-            font-size: 18px;
-        }
-    
-        i {
-            padding-top: 10px;
-            font-size: 50px;
-        }
+        color: #fff;
+        background-color: #008080;
+        padding: 5px;
+        border-radius: 25px;
     }
 }
 
