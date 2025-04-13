@@ -5,13 +5,16 @@ const { log } = console;
 const clock = document.querySelector('.clock');
 const battLevel = document.querySelector('.batt-level');
 
+const login = document.querySelector('.login')
 const home = document.querySelector('.home');
 const search = document.querySelector('.search');
 const profile = document.querySelector('.profile');
 const swaps = document.querySelector('.swaps');
 const settings = document.querySelector('.settings');
 const listing = document.querySelector('.listing');
+const footer = document.querySelector('footer');
 
+const loginButton = document.querySelector('.login-button');
 const navButtons = document.querySelectorAll('nav a');
 const mainSections = document.querySelectorAll('main section');
 
@@ -42,10 +45,16 @@ navButtons.forEach(button => {
         const targetId = button.getAttribute('id');
         
         mainSections.forEach(div => {
-            div.classList.remove('active'); // Hide all divs
+            div.classList.remove('active');
         });
 
         const targetDiv = document.getElementById(targetId);
-        targetDiv.classList.add('active'); // Show the selected div
+        targetDiv.classList.add('active');
     });
+});
+
+loginButton.addEventListener('click', () => {
+    login.classList.remove('active');
+    footer.classList.remove('hide');
+    home.classList.add('active');
 });

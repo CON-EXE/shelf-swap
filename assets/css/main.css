@@ -25,6 +25,10 @@
     place-content: center;
 }
 
+.hide {
+    display: none;
+}
+
 body {
     background-color: #181725;
     display: grid;
@@ -57,7 +61,6 @@ header {
     line-height: 30px;
     top: 0;
     padding: 0 25px 0 25px;
-    background-color: lightblue;
     
     div {
         height: 100%;
@@ -75,7 +78,6 @@ footer {
     height: 50px;
     bottom: 0;
     position: absolute;
-    background-color: lightblue;
     border-top: solid 1px #00000041;
 }
 
@@ -102,6 +104,7 @@ nav {
         color: #fff;
         font-size: 15px;
         border-radius: 50px;
+        transform: translateY(-4px);
     
         :hover {
             cursor: pointer;
@@ -123,6 +126,38 @@ h1 {
 
 h2 {
     font-size: 18px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.column {
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgb(0 0 0 / 8%);
+    flex: 0 0 calc(50% - 4px);
+    max-width: calc(50% - 4px);
+}
+
+div.column {
+    background-color: blue;
+}
+
+.button-container {
+    width: 100%;
+    margin-top: 10px;
+}
+
+button {
+    width: 250px;
+    text-align: center;
+    color: #fff;
+    background-color: #008080;
+    padding: 5px;
+    border-radius: 25px;
 }
 
 .login {
@@ -158,7 +193,7 @@ h2 {
       border-color: #008080;
     }
     
-    button[type="submit"] {
+    button {
       width: 100%;
       padding: 10px 0;
       border: none;
@@ -170,7 +205,7 @@ h2 {
       transition: background 0.3s ease;
     }
     
-    button[type="submit"]:hover {
+    button:hover {
       background: #008080;
     }
     
@@ -246,22 +281,19 @@ h2 {
         font-weight: 500;
     }
 
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-    }
-    
-    .column {
-        height: 150px;
-        border-radius: 5px;
-        box-shadow: 2px 2px 4px rgb(0 0 0 / 8%);
-        flex: 0 0 calc(50% - 4px);
-        max-width: calc(50% - 4px);
+    input[type=text] {
+        margin-bottom: 10px;
+        width: 290px;
+        height: 30px;
+        margin-top: 10px;
+        border: 1px solid #18172529;
+        border-radius: 25px;
+        padding-inline: 10px;
+        transition: border 0.3s ease-in;
     }
 
-    div.column {
-        background-color: blue;
+    input[type="text"]:focus {
+        border: 1px solid #008080;
     }
     
     .button-container {
@@ -334,25 +366,125 @@ h2 {
     }
 }
 
+.profile {
+
+    h2 {
+        margin-top: 20px;
+    }
+
+    .avatar {
+        width: 80px;
+        height: 80px;
+        background-color: #bbb;
+        border-radius: 50%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+      }
+    
+      .profile-name {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      
+      .username {
+        margin-top: 5px;
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+      }
+      
+      .bio {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 14px;
+        color: #333;
+        line-height: 1.4;
+      }
+      
+      .tabs {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      
+      .tabs button {
+        background: none;
+        border: none;
+        font-size: 16px;
+        color: #999;
+        padding: 10px 20px;
+        margin: 0 10px;
+        border-bottom: 2px solid transparent;
+        cursor: pointer;
+        outline: none;
+      }
+      
+      .tabs button.active {
+        color: #000;
+        border-color: #000;
+      }
+     
+      .listings {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+      
+      .listings img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover; 
+        border-radius: 4px; 
+      }
+}
+
 .swaps {
     
     h2 { 
         margin-top: 20px;
     }
 
-    li {
-        margin-top: 10px;
-        width: 100%;
-        height: 120px;
-        background-color: #fff;
-        padding: 5px;
+    div {
+        margin-top: 6px;
+    }
 
+    p {
+        margin-top: 10px;
+        margin-left: 5px;
     }
 
     .img {
         width: 112px;
         height: 120px;
         background-color: blue;
+    }
+}
+
+.listing {
+    place-items: center;
+
+    h1, h2, p, button {
+        margin-top: 6px;
+    }
+
+    .img {
+        margin-top: 30px;
+        height: 250px;
+        width: 234px;
+        background-color: blue;
+        border-radius: 6px;
+    }
+
+    h2.others, .row {
+        margin-right: auto;
     }
 }
 

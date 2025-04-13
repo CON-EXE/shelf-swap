@@ -30,7 +30,8 @@
             </header>
 
             <main>
-                <section class="login active"> <!--'Coded' by Xiyu-->
+
+                <section class="login"> <!--'Coded' by Xiyu-->
                     <form class="login-form">
                         <img src="./assets/media/Icon.png" alt="Login Illustration" class="login-image">
                         <h2>Login</h2>
@@ -42,7 +43,7 @@
                           <label for="password">Password</label>
                           <input type="password" id="password" name="password" placeholder="Enter your password" required>
                         </div>
-                        <button type="submit">Login</button>
+                        <button class="login-button">Login</button>
                         <p class="signup-link">
                           Don't have an account? <a href="#">Sign up now</a>
                         </p>
@@ -147,8 +148,9 @@
                             <select>
                                 <option selected>Any</option>
                                 <option>New</option>
+                                <option>Fairly New</option>
                                 <option>Used</option>
-                                <option>Damaged</option>
+                                <option>Greatly Used</option>
                             </select>
                         </div>
                         <div>
@@ -209,39 +211,69 @@
                         </div>
                     </div>
                 </section>
+
+                <section id="3" class="profile">
+                    <div class="avatar">CH</div>
+                    <div class="profile-name">Connor Hall</div>
+                  
+                    <div class="username">@con.exe</div>
+                  
+                    <div class="bio">
+                      I am an avid book reader looking to get<br />
+                      access to more good books
+                    </div>
+                    
+                    <h2>My Listings</h2>
+                    <div class="recomended row">
+                        <div class="col-1 column"></div>
+                        <div class="col-2 column"></div>
+                        <div class="col-3 column"></div>
+                        <div class="col-4 column"></div>
+                    </div>
+                    <div class="button-container grid-center">
+                        <button class="view-all">View All</button>
+                    </div>
+
+                    <h2>WishList</h2>
+                    <div class="recomended row">
+                        <div class="col-1 column"></div>
+                        <div class="col-2 column"></div>
+                        <div class="col-3 column"></div>
+                        <div class="col-4 column"></div>
+                    </div>
+                    <div class="button-container grid-center">
+                        <button class="view-all">View All</button>
+                    </div>
+    
+                </section>
                 
-                <section id="4" class="swaps active">
+                <section id="4" class="swaps">
                     <h1>Swaps</h1>
                     <h2>Watching</h2>
-                    <ul>
-                        <li>
-                            <div class="flex">
-                                <div class="img"></div>
-                                <div class="info">
-                                    <p>$27.99</p>
-                                    <p>condition: new</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="flex">
-                                <div class="img"></div>
-                                <div class="info">
-                                    <p>Trade</p>
-                                    <p>condition: used</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="flex">
-                                <div class="img"></div>
-                                <div class="info">
-                                    <p>$3.50</p>
-                                    <p>condition: fucked</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="flex">
+                        <div class="img"></div>
+                        <div class="info">
+                            <p>$27.99</p>
+                            <p>name</p>
+                            <p>condition: new</p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="img"></div>
+                        <div class="info">
+                            <p>Trade</p>
+                            <p>name</p>
+                            <p>condition: used</p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="img"></div>
+                        <div class="info">
+                            <p>$3.50</p>
+                            <p>name</p>
+                            <p>condition: fucked</p>
+                        </div>
+                    </div>
 
                     <h2>My Listings</h2>
                     <ul>
@@ -250,6 +282,7 @@
                                 <div class="img"></div>
                                 <div class="info">
                                     <p>$27.99</p>
+                                    <p>name</p>
                                     <p>condition: new</p>
                                 </div>
                             </div>
@@ -259,6 +292,7 @@
                                 <div class="img"></div>
                                 <div class="info">
                                     <p>Trade</p>
+                                    <p>name</p>
                                     <p>condition: used</p>
                                 </div>
                             </div>
@@ -268,6 +302,7 @@
                                 <div class="img"></div>
                                 <div class="info">
                                     <p>$3.50</p>
+                                    <p>name</p>
                                     <p>condition: fucked</p>
                                 </div>
                             </div>
@@ -275,15 +310,22 @@
                     </ul>
                 </section>
 
-                <section class="listing hide">
-                    <div class="listing=img"></div>
+                <section class="listing active">
+                    <div class="img"></div>
 
-                    <h1 class="listing-title"></h1>
-                    <h2 class="listing-price"></h2>
+                    <h1 class="listing-title">Title</h1>
+                    <h2 class="listing-price">Posted by @sarsbars</h2>
+                    <p>Trading for:</p>
                     
-                    <div class="profile-icon"></div>
-                    
-                    <button>Contact seller</button>
+                    <button>Message Swapper</button>
+
+                    <h2 class="others">Others like this:</h2>
+                    <div class="row">
+                        <div class="col-1 column"></div>
+                        <div class="col-2 column"></div>
+                        <div class="col-3 column"></div>
+                        <div class="col-4 column"></div>
+                    </div>
                 </section>
                 
                 <section id="5" class="settings">
@@ -299,11 +341,9 @@
                     </ul>
                 </section>
                 
-                <section id="3" class="profile">
-
-                </section>
             </main>
-            <footer>
+
+            <footer class="">
                 <nav class="justify-between flex">
                     <a id="1">
                         <i class="fa-solid fa-house"></i>
