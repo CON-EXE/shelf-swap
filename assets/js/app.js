@@ -15,6 +15,7 @@ const listing = document.querySelector('.listing');
 const footer = document.querySelector('footer');
 
 const loginButton = document.querySelector('.login-button');
+const swapDemo = document.querySelector('.swap-demo');
 const navButtons = document.querySelectorAll('nav a');
 const mainSections = document.querySelectorAll('main section');
 
@@ -51,6 +52,11 @@ navButtons.forEach(button => {
         const targetDiv = document.getElementById(targetId);
         targetDiv.classList.add('active');
     });
+});
+
+swapDemo.addEventListener('click', () => {
+    listing.classList.add('active');
+    swaps.classList.remove('active');
 });
 
 loginButton.addEventListener('click', () => {
