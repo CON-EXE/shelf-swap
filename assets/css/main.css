@@ -76,6 +76,7 @@ footer {
     bottom: 0;
     position: absolute;
     background-color: lightblue;
+    border-top: solid 1px #00000041;
 }
 
 nav {
@@ -192,6 +193,11 @@ h2 {
         border: 1px solid #18172529;
         border-radius: 25px;
         padding-inline: 10px;
+        transition: border 0.3s ease-in;
+    }
+
+    input[type="text"]:focus {
+        border: 1px solid #008080;
     }
 
     div {
@@ -218,6 +224,16 @@ h2 {
         background-color: #fff;
         border: 1px solid #18172529;
         border-radius: 6px;
+        transition: border 0.3s ease-in;
+        
+    }
+
+    select:focus {
+        border: 1px solid #008080;
+    }
+    
+    option:hover {
+        background-color: #008080;
     }
 }
 
