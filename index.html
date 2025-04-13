@@ -30,6 +30,34 @@
             </header>
 
             <main>
+                <section class="login active"> <!--'Coded' by Xiyu-->
+                    <form class="login-form">
+                        <img src="./assets/media/Icon.png" alt="Login Illustration" class="login-image">
+                        <h2>Login</h2>
+                        <div class="input-group">
+                          <label for="username">Username</label>
+                          <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                        </div>
+                        <div class="input-group">
+                          <label for="password">Password</label>
+                          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                        </div>
+                        <button type="submit">Login</button>
+                        <p class="signup-link">
+                          Don't have an account? <a href="#">Sign up now</a>
+                        </p>
+                        
+                        <div class="alternative-login">
+                          <p>Or login with</p>
+                          <div class="social-icons">
+                            <a href="https://www.instagram.com/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://mail.google.com" class="social-link" target="_blank"><i class="fab fa-google"></i></a>
+                          </div>
+                        </div>
+                      </form>
+                </section>
+
                 <section id="1" class="home">
                     <div class="align flex justify-between">
                         <h1>Home</h1>
@@ -87,7 +115,7 @@
                     </div>
                 </section>
 
-                <section id="2" class="search active">
+                <section id="2" class="search">
                     <h1>Search</h1>
                     <input type="text" placeholder="Search">
                     <h2>Advanced Search</h2>
@@ -182,13 +210,13 @@
                     </div>
                 </section>
                 
-                <section id="4" class="swaps hide">
+                <section id="4" class="swaps active">
                     <h1>Swaps</h1>
                     <h2>Watching</h2>
                     <ul>
                         <li>
                             <div class="flex">
-                                <div class="pic"></div>
+                                <div class="img"></div>
                                 <div class="info">
                                     <p>$27.99</p>
                                     <p>condition: new</p>
@@ -197,7 +225,7 @@
                         </li>
                         <li>
                             <div class="flex">
-                                <div class="pic"></div>
+                                <div class="img"></div>
                                 <div class="info">
                                     <p>Trade</p>
                                     <p>condition: used</p>
@@ -206,7 +234,7 @@
                         </li>
                         <li>
                             <div class="flex">
-                                <div class="pic"></div>
+                                <div class="img"></div>
                                 <div class="info">
                                     <p>$3.50</p>
                                     <p>condition: fucked</p>
@@ -219,7 +247,7 @@
                     <ul>
                         <li>
                             <div class="flex">
-                                <div class="pic"></div>
+                                <div class="img"></div>
                                 <div class="info">
                                     <p>$27.99</p>
                                     <p>condition: new</p>
@@ -228,7 +256,7 @@
                         </li>
                         <li>
                             <div class="flex">
-                                <div class="pic"></div>
+                                <div class="img"></div>
                                 <div class="info">
                                     <p>Trade</p>
                                     <p>condition: used</p>
@@ -237,7 +265,7 @@
                         </li>
                         <li>
                             <div class="flex">
-                                <div class="pic"></div>
+                                <div class="img"></div>
                                 <div class="info">
                                     <p>$3.50</p>
                                     <p>condition: fucked</p>
@@ -258,7 +286,7 @@
                     <button>Contact seller</button>
                 </section>
                 
-                <section class="settings hide">
+                <section id="5" class="settings">
                     <h1>Settings</h1>
                     <ul>
                         <li>Account</li>
@@ -271,7 +299,7 @@
                     </ul>
                 </section>
                 
-                <section class="profile hide">
+                <section id="3" class="profile">
 
                 </section>
             </main>
