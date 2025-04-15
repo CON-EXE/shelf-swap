@@ -30,7 +30,7 @@
 }
 
 body {
-    /* background-color: #181725; */
+    background-color: #181725;
     display: grid;
     place-content: center;
     justify-content: center;
@@ -496,9 +496,9 @@ button {
     .swap-1 { background: url(../media/fantasy-01.jpg) center center / cover no-repeat; }
     .swap-2 { background: url(../media/textbook-01.jpg) center center / cover no-repeat; }
     .swap-3 { background: url(../media/fantasy-08.jpg) center center / cover no-repeat; }
-    .swap-4 { background: url(../media/fantasy-01.jpg) center center / cover no-repeat; }
-    .swap-5 { background: url(../media/fantasy-01.jpg) center center / cover no-repeat; }
-    .swap-6 { background: url(../media/fantasy-01.jpg) center center / cover no-repeat; }
+    .swap-4 { background: url(../media/fantasy-07.jpg) center center / cover no-repeat; }
+    .swap-5 { background: url(../media/fantasy-05.jpg) center center / cover no-repeat; }
+    .swap-6 { background: url(../media/fantasy-04.jpg) center center / cover no-repeat; }
 }
 
 .listing {
@@ -520,6 +520,11 @@ button {
     h2.others, .row {
         margin-right: auto;
     }
+
+    .other-1 { background: url(../media/fantasy-02.jpg) center center / cover no-repeat; }
+    .other-2 { background: url(../media/fantasy-03.jpg) center center / cover no-repeat; }
+    .other-3 { background: url(../media/fantasy-06.jpg) center center / cover no-repeat; }
+    .other-4 { background: url(../media/fantasy-08.jpg) center center / cover no-repeat; }
 }
 
 .settings {
