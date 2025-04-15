@@ -30,7 +30,7 @@
 }
 
 body {
-    background-color: #181725;
+    /* background-color: #181725; */
     display: grid;
     place-content: center;
     justify-content: center;
@@ -309,6 +309,21 @@ button {
         padding: 5px;
         border-radius: 25px;
     }
+
+    .rec-1 { background: url(../media/textbook-01.jpg) center center / cover no-repeat; }
+    .rec-2 { background: url(../media/crime-01.jpg) center center / cover no-repeat; }
+    .rec-3 { background: url(../media/fantasy-08.jpg) center center / cover no-repeat; }
+    .rec-4 { background: url(../media/fantasy-02.jpg) center center / cover no-repeat; }
+
+    .fant-1 { background: url(../media/fantasy-03.jpg) center center / cover no-repeat; }
+    .fant-2 { background: url(../media/fantasy-04.jpg) center center / cover no-repeat; }
+    .fant-3 { background: url(../media/fantasy-06.jpg) center center / cover no-repeat; }
+    .fant-4 { background: url(../media/fantasy-05.jpg) center center / cover no-repeat; }
+
+    .crime-1 { background: url(../media/crime-01.jpg) center center / cover no-repeat; }
+    .crime-2 { background: url(../media/crime-02.jpg) center center / cover no-repeat; }
+    .crime-3 { background: url(../media/crime-03.jpg) center center / cover no-repeat; }
+    .crime-4 { background: url(../media/crime-04.jpg) center center / cover no-repeat; }
 }
 
 .search {
@@ -444,6 +459,16 @@ button {
         object-fit: cover; 
         border-radius: 4px; 
       }
+
+      .my-1 { background: url(../media/fantasy-07.jpg) center center / cover no-repeat; }
+      .my-2 { background: url(../media/fantasy-05.jpg) center center / cover no-repeat; }
+      .my-3 { background: url(../media/fantasy-04.jpg) center center / cover no-repeat; }
+      .my-4 { background: url(../media/fantasy-03.jpg) center center / cover no-repeat; }
+
+      .wish-1 { background: url(../media/textbook-01.jpg) center center / cover no-repeat; }
+      .wish-2 { background: url(../media/fantasy-08.jpg) center center / cover no-repeat; }
+      .wish-3 { background: url(../media/fantasy-02.jpg) center center / cover no-repeat; }
+      .wish-4 { background: url(../media/fantasy-01.jpg) center center / cover no-repeat; }
 }
 
 .swaps {
@@ -467,6 +492,13 @@ button {
         height: 120px;
         background-color: blue;
     }
+
+    .swap-1 { background: url(../media/fantasy-01.jpg) center center / cover no-repeat; }
+    .swap-2 { background: url(../media/textbook-01.jpg) center center / cover no-repeat; }
+    .swap-3 { background: url(../media/fantasy-08.jpg) center center / cover no-repeat; }
+    .swap-4 { background: url(../media/fantasy-01.jpg) center center / cover no-repeat; }
+    .swap-5 { background: url(../media/fantasy-01.jpg) center center / cover no-repeat; }
+    .swap-6 { background: url(../media/fantasy-01.jpg) center center / cover no-repeat; }
 }
 
 .listing {
@@ -482,6 +514,7 @@ button {
         width: 234px;
         background-color: blue;
         border-radius: 6px;
+        background: url(../media/fantasy-01.jpg) center center / cover no-repeat; 
     }
 
     h2.others, .row {
